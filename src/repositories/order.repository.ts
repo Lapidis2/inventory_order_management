@@ -1,9 +1,9 @@
 import {  PoolClient } from "pg";
-import { orderModal } from "../Models/order.modal";
+import { ordermodel } from "../Models/order.model";
 
 export const createNewOrder=async(
     client:PoolClient,
-    order:orderModal
+    order:ordermodel
 ):Promise<void>=>{
     await client.query(
         'INSERT INTO orders (product_id,quantity,status) VALUES ($1,$2,$3)',

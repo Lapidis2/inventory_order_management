@@ -1,9 +1,9 @@
 import { Client, PoolClient } from "pg";
-import { ProductModal } from "../Models/product.modal";
+import { Productmodel } from "../Models/product.model";
 export const getProductById=async(
     client:PoolClient,
     productId:number,
-):Promise<ProductModal| null>=>{
+):Promise<Productmodel| null>=>{
     const output=await client.query(
         'SELECT * FROM products WHERE product_id=$1',[productId]
     )

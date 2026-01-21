@@ -1,6 +1,6 @@
 import pool from "../dbConfig/postgres";
-import * as productStore from "../stores/product.stores"
-import * as orderStore from "../stores/order.stores"
+import * as productStore from "../repositories/product.repository"
+import * as orderStore from "../repositories/order.repository"
 
 
 export const addOrder=async(
