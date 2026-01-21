@@ -2,7 +2,7 @@ import { Request,Response } from "express";
 import * as orderService from "../services/order.service";
 export const createOrder=async(req:Request,res:Response)=>{
     try {
-        const {productId,quantity}=req.body
+        const {productId,quantity}=req.body||{}
         const response=await orderService.addOrder(
             productId,
             quantity

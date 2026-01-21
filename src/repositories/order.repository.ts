@@ -1,5 +1,5 @@
 import {  PoolClient } from "pg";
-import { ordermodel } from "../Models/order.model";
+import { ordermodel } from "../Models/order.modal";
 
 export const createNewOrder=async(
     client:PoolClient,
