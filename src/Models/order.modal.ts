@@ -1,5 +1,5 @@
 export interface orderModal{
-    orderId:number,
+    orderId?:number,
     productId:number,
     quantity:number,
     status:string,
