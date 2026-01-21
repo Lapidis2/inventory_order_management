@@ -9,3 +9,12 @@ export const getProductById=async(
     )
     return output.rows[0] || null
 }
+export const updateStock=async(
+    Client:PoolClient,
+    productId:number,
+    newUpdatedStock:number,
+):Promise<void>=>{
+    await Client.query(
+        'UPDATE products SET stock=$1 WHERE product_id=$2',[newUpdatedStock,productId]
+    )
+}
