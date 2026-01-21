@@ -90,4 +90,4 @@ cd frontend
 ### mobile side
 cd mobile
 `flutter pub get`
-`flutter`
+`flutter run`
