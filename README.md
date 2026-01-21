@@ -18,6 +18,7 @@ This project is an **Inventory Allocation System** where person can place orders
 ---
 
 ## 2️ Folder Structure
+```
 inventory_order_management/
 ├── backend/ # Node.js backend
 │ ├── controllers/ # Handle HTTP requests/responses
@@ -40,6 +41,7 @@ inventory_order_management/
 │ └── .env # API URL (optional)
 │
 └── README.md # whole project documentation
+```
 
 
 ---
